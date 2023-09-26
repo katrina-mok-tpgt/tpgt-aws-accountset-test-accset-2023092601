@@ -1,0 +1,9 @@
+templates:
+  - cfn/**/*
+ignore_templates:
+  - cfn/README.md
+ignore_checks:
+  - W2001
+  - W3005
+include_checks:
+  - W3037

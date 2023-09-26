@@ -1,0 +1,9 @@
+---
+# Dependabot configuration file used to update this repo if gitsubmodules change
+
+version: 2
+updates:
+  - package-ecosystem: "gitsubmodule"
+    directory: "/"
+    schedule:
+      interval: "weekly"

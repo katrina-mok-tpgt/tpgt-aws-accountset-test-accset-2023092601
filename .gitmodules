@@ -1,0 +1,8 @@
+[submodule ".cfn_platform"]
+	path = .cfn_platform
+	url = git@github.com:VodafoneAustralia/rio-for-infra_platform-base-cloudformation.git
+	branch = main
+[submodule ".rio4infra"]
+	path = .rio4infra
+	url = git@github.com:VodafoneAustralia/rio-for-infra_platform-base-scripts.git
+	branch = main

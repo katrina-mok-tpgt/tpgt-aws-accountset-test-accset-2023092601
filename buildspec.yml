@@ -1,0 +1,20 @@
+version: 0.2
+env:
+  git-credential-helper: yes
+  secrets-manager:
+    build_ssh_key: "github-ssh-key"
+phases:
+  install:
+    runtime-versions:
+      python: 3.10
+    commands:
+      - wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq && chmod +x /usr/bin/yq
+      - mkdir -p ~/.ssh
+      - echo "$build_ssh_key" > ~/.ssh/id_rsa
+      - chmod 600 ~/.ssh/id_rsa
+  build:
+    commands:
+      - make prepare
+      - make install
+      - make build
+      - make test
