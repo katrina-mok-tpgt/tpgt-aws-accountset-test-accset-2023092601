@@ -1,6 +1,0 @@
----
-
-env:
-  PROVISIONING_ROLE_NAME: "platform/tpgt-rioinfrapipelinedeploy"
-
-#tags:
